@@ -8,11 +8,11 @@ cat <<EOF
                      v$version © lihaoyun6 2018
                 自动识别并安装符合显示器真实外观的图标
               本项目基于本人维护的显示器个性化图标数据库
- 欢迎向 👉https://github.com/lihaoyun6/macOS-Displays-icon 提交图标
+ 欢迎向 👉https://github.com/visitingms/macOS-Displays-icon 提交图标
 
 
 EOF
-	welcome="欢迎向 👉https://github.com/lihaoyun6/macOS-Displays-icon 提交图标"
+	welcome="欢迎向 👉https://github.com/visitingms/macOS-Displays-icon 提交图标"
 	checkdisplay="正在检测显示器数据..."
 	finded="共找到 "
 	displays=" 台显示器"
@@ -39,11 +39,11 @@ cat <<EOF
                      v$version © lihaoyun6 2018
             Automatically identify the monitor model
       and install icon file that shows how the monitor looks
-Share your icon 👉https://github.com/lihaoyun6/macOS-Displays-icon
+Share your icon 👉https://github.com/visitingms/macOS-Displays-icon
 
 
 EOF
-	welcome="Share your icon 👉https://github.com/lihaoyun6/macOS-Displays-icon"
+	welcome="Share your icon 👉https://github.com/visitingms/macOS-Displays-icon"
 	checkdisplay="Checking monitor(s) info..."
 	finded=""
 	displays=" monitor(s) found"
@@ -97,9 +97,9 @@ icon() {
 
 add=$(/usr/bin/curl -s cip.cc|grep -m1 -o "中国")
 if [ x"$add" = x"中国" ];then
-	url="https://coding.net/u/lihaoyun6/p/macOS-Displays-icon/git/raw/master"
+	url="https://coding.net/u/visitingms/p/macOS-Displays-icon/git/raw/master"
 else
-	url="https://raw.githubusercontent.com/lihaoyun6/macOS-Displays-icon/master"
+	url="https://raw.githubusercontent.com/visitingms/macOS-Displays-icon/master"
 fi
 lang=$(osascript -e 'user locale of (get system info)')
 #lang=qqq
